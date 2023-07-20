@@ -172,11 +172,6 @@ public class PlayerHandlers
         }
     }
 
-    public void OnUsingRadioBattery(UsingRadioBatteryEventArgs ev)
-    {
-        ev.Drain *= plugin.Config.RadioBatteryDrainMultiplier;
-    }
-
     public void AntiAfkEventHandler(IPlayerEvent ev)
     {
         if (ev.Player != null && plugin.AfkDict.ContainsKey(ev.Player))

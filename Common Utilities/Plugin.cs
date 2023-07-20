@@ -134,7 +134,6 @@ public class Plugin : Plugin<Config>
         Player.Escaping += PlayerHandlers.OnPlayerEscaping;
         Player.InteractingDoor += PlayerHandlers.OnInteractingDoor;
         Player.ProcessingHotkey += PlayerHandlers.AntiAfkEventHandler;
-        Player.UsingRadioBattery += PlayerHandlers.OnUsingRadioBattery;
         Player.ChangingMoveState += PlayerHandlers.AntiAfkEventHandler;
         Player.InteractingElevator += PlayerHandlers.OnInteractingElevator;
 
@@ -171,7 +170,6 @@ public class Plugin : Plugin<Config>
         Player.ThrownProjectile -= PlayerHandlers.AntiAfkEventHandler;
         Player.InteractingDoor -= PlayerHandlers.OnInteractingDoor;
         Player.ProcessingHotkey -= PlayerHandlers.AntiAfkEventHandler;
-        Player.UsingRadioBattery -= PlayerHandlers.OnUsingRadioBattery;
         Player.ChangingMoveState -= PlayerHandlers.AntiAfkEventHandler;
         Player.InteractingElevator -= PlayerHandlers.OnInteractingElevator;
 
